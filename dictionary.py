@@ -1,0 +1,50 @@
+#
+# from tkinter import *
+# window = Tk()
+# window.geometry("420x420")
+# window.title("thinker user")
+# window.config(background = "cyan")
+#
+# icon = PhotoImage(file = "ballon.png")
+# window.iconphoto(False,icon)
+# window.mainloop()
+print("--------------------------------------------------")
+import tkinter
+win = tkinter.Tk()
+def Registration():
+      print("you have the submitted your document")
+
+win.geometry("520x520")
+win.title("my first project")
+
+l1 = tkinter.Label(win,text="Person details",font=10)
+l2 = tkinter.Label(win,text="name",font=10)
+l3 = tkinter.Label(win,text="age",font=10)
+l4 = tkinter.Label(win,text="gender",font=10)
+l5 = tkinter.Label(win,text="email",font=10)
+l6 = tkinter.Label(win,text="mobile",font=10)
+l1.grid(row =1,column=1)
+l2.grid(row =2,column=1)
+l3.grid(row =3,column=1)
+l4.grid(row =4,column=1)
+l5.grid(row =5,column=1)
+l6.grid(row =6,column=1)
+e1= tkinter.Entry(win)
+e2= tkinter.Entry(win)
+e3= tkinter.Entry(win)
+e4= tkinter.Entry(win)
+e5= tkinter.Entry(win)
+e6= tkinter.Entry(win)
+e1.grid(row=1,column=2)
+e2.grid(row=2,column=2)
+e3.grid(row=3,column=2)
+e4.grid(row=4,column=2)
+e5.grid(row=5,column=2)
+e6.grid(row=6,column=2)
+b1 = tkinter.Button(win, text="Submit here",command = Registration)
+b2 = tkinter.Button(win,text="click me")
+b2.grid(row=10,column=2)
+b1.grid(row=8,column=2)
+win.mainloop()
+
+
